@@ -1,0 +1,368 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expansão Marítima - Séculos XV e XVI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header histórico -->
+<header class="header">
+  <div class="header-content">
+    <div class="logo">
+      <div class="compass"></div>
+      <h1>Expansão Marítima</h1>
+    </div>
+
+    <!-- Botão hamburger no lado direito -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="main-nav">
+      <ul class="tab-menu">
+        <li><a href="#mapa" class="tab-button active" data-tab="mapa">Mapa Interativo</a></li>
+        <li><a href="#introducao" class="tab-button" data-tab="introducao">Introdução</a></li>
+        <li><a href="#motivacoes" class="tab-button" data-tab="motivacoes">Motivações</a></li>
+        <li><a href="#protagonistas" class="tab-button" data-tab="protagonistas">Protagonistas</a></li>
+        <li><a href="#consequencias" class="tab-button" data-tab="consequencias">Consequências</a></li>
+        <li><a href="#galeria" class="tab-button" data-tab="galeria">Galeria</a></li>
+        <li><a href="#quiz" class="tab-button" data-tab="quiz">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <!-- Aba do Mapa Interativo -->
+        <div id="mapa" class="tab-content active">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">A Era dos Descobrimentos</h2>
+                    <p class="hero-subtitle">Navegue pela história das Grandes Navegações dos séculos XV e XVI</p>
+                    <p class="hero-description">
+                        Explore as rotas marítimas que mudaram o mundo. Clique em "Iniciar Jornada" para ver o barco navegar pelas rotas históricas e descobrir os segredos da Expansão Marítima.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Mapa Interativo -->
+            <section class="section">
+                <div class="container">
+                    <div class="interactive-map">
+                        <div class="map-container">
+                            <!-- Barco animado -->
+                            <div class="ship" id="ship"></div>
+                            
+                            <!-- Pontos de rota - posições ajustadas -->
+                            <div class="route-point" data-route="lisboa" style="top: 35%; left: 15%;"></div>
+                            <div class="route-point" data-route="ceuta" style="top: 42%; left: 18%;"></div>
+                            <div class="route-point" data-route="cabo-verde" style="top: 55%; left: 8%;"></div>
+                            <div class="route-point" data-route="cabo-esperanca" style="top: 85%; left: 35%;"></div>
+                            <div class="route-point" data-route="india" style="top: 45%; left: 85%;"></div>
+                            <div class="route-point" data-route="canarias" style="top: 48%; left: 12%;"></div>
+                            <div class="route-point" data-route="america" style="top: 50%; left: 90%;"></div>
+                            <div class="route-point" data-route="brasil" style="top: 70%; left: 88%;"></div>
+                            
+                            <!-- Painel de informações -->
+                            <div class="route-info" id="route-info">
+                                <h3 id="route-title">Clique em "Iniciar Jornada" para começar</h3>
+                                <p id="route-description">Acompanhe o barco navegando pelas rotas históricas da Expansão Marítima.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Controles do mapa -->
+                        <div class="map-controls">
+                            <button class="control-button" id="start-journey">Iniciar Jornada</button>
+                            <button class="control-button" id="pause-journey">Pausar</button>
+                            <button class="control-button" id="reset-journey">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Introdução -->
+        <div id="introducao" class="tab-content">
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Introdução à Expansão Marítima</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <p>A <strong>expansão marítima europeia</strong> foi o período compreendido entre os séculos XV e XVIII, quando alguns povos europeus partiram para explorar o oceano que os rodeava.</p>
+                            <p>Estas viagens estão inseridas no contexto da Revolução Comercial e resultaram no encontro de culturas diferentes, na exploração colonial dos territórios chamados pelos europeus do Novo Mundo e na interligação dos continentes.</p>
+                            <p>As primeiras grandes navegações dos europeus permitiram a superação das barreiras comerciais da Idade Média, o desenvolvimento da economia mercantil e o fortalecimento da burguesia.</p>
+                            <p>A necessidade do europeu lançar-se ao mar resultou de uma série de fatores sociais, políticos, econômicos e tecnológicos. A Europa saía da crise do século XIV e as monarquias nacionais eram levadas a novos desafios que resultaram na expansão para outros territórios.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="img/mapa_vintage.jpg" alt="Mapa das Grandes Navegações" class="section-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Motivações -->
+        <div id="motivacoes" class="tab-content">
+            <section class="section alt-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Motivações das Grandes Navegações</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <h3>💰 Econômicas</h3>
+                            <p>Busca por metais preciosos, especiarias e novos mercados. O comércio com o Oriente era lucrativo, mas controlado por intermediários árabes que impunham altas taxas.</p>
+                            
+                            <h3>⛪ Religiosas</h3>
+                            <p>A Igreja Católica apoiou a expansão como forma de evangelizar novos povos e expandir a fé cristã para territórios desconhecidos.</p>
+                            
+                            <h3>🗺️ Políticas</h3>
+                            <p>Fortalecimento das monarquias nacionais através da conquista de novos territórios e estabelecimento de impérios ultramarinos.</p>
+                            
+                            <h3>⚙️ Tecnológicas</h3>
+                            <p>Avanços na cartografia, astronomia e engenharia náutica, incluindo o desenvolvimento de caravelas, bússola e astrolábio.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="img/mapa_rotas1.jpg" alt="Rotas Comerciais" class="section-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Protagonistas -->
+        <div id="protagonistas" class="tab-content">
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Portugal e Espanha: Protagonistas</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <h3>🇵🇹 Portugal - O Pioneiro</h3>
+                            <p>Portugal foi o país pioneiro nas Grandes Navegações, iniciando suas expedições em 1415 com a conquista de Ceuta. Graças à sua posição geográfica favorável e ao investimento em tecnologia náutica, os portugueses desenvolveram embarcações como as caravelas.</p>
+                            
+                            <h4>Cronologia Portuguesa:</h4>
+                            <ul>
+                                <li><strong>1415</strong> - Conquista de Ceuta</li>
+                                <li><strong>1488</strong> - Bartolomeu Dias contorna o Cabo da Boa Esperança</li>
+                                <li><strong>1498</strong> - Vasco da Gama chega à Índia</li>
+                                <li><strong>1500</strong> - Pedro Álvares Cabral chega ao Brasil</li>
+                            </ul>
+                        </div>
+                        <div class="image-content">
+                            <img src="img/mapa_rotas2.jpg" alt="Rotas Portuguesas" class="section-image">
+                        </div>
+                    </div>
+                    
+                    <div class="content-grid reverse-grid">
+                        <div class="image-content">
+                            <img src="img/mapa_rotas3.jpg" alt="Rotas Espanholas" class="section-image">
+                        </div>
+                        <div class="text-content">
+                            <h3>🇪🇸 Espanha - O Descobridor</h3>
+                            <p>A Espanha foi o segundo país a se lançar nas Grandes Navegações, após a unificação de grande parte de seu território em 1492. A primeira grande incursão espanhola resultou na chegada de Cristóvão Colombo à América.</p>
+                            
+                            <h4>Cronologia Espanhola:</h4>
+                            <ul>
+                                <li><strong>1492</strong> - Cristóvão Colombo descobre a América</li>
+                                <li><strong>1494</strong> - Tratado de Tordesilhas</li>
+                                <li><strong>1519</strong> - Fernão de Magalhães inicia circum-navegação</li>
+                                <li><strong>1531</strong> - Francisco Pizarro conquista o Peru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Consequências -->
+        <div id="consequencias" class="tab-content">
+            <section class="section alt-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Consequências</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <h3>🌍 Globalização</h3>
+                            <p>Conexão de diferentes partes do mundo, com a integração de mercados e a formação de um sistema global de trocas.</p>
+                            
+                            <h3>🏴‍☠️ Exploração e Colonização</h3>
+                            <p>Descoberta e exploração de novos territórios, especialmente nas Américas, África e Ásia, levando à formação de colônias.</p>
+                            
+                            <h3>⛓️ Comércio de Escravos</h3>
+                            <p>O início do tráfico transatlântico de escravos, com a escravização de povos africanos para trabalhar nas colônias.</p>
+                            
+                            <h3>💎 Acúmulo de Riquezas</h3>
+                            <p>Grande acúmulo de metais preciosos (ouro e prata) na Europa, provenientes das colônias, impulsionando a economia europeia.</p>
+                            
+                            <h3>🎭 Mudanças Culturais</h3>
+                            <p>Encontro e choque de culturas, com a imposição da cultura europeia sobre os povos nativos.</p>
+                            
+                            <h3>🔬 Desenvolvimento Científico</h3>
+                            <p>Avanços na cartografia, astronomia e engenharia náutica, impulsionados pela necessidade de navegação precisa.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="img/navios_tempestade.jpg" alt="Navios em Tempestade" class="section-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Galeria -->
+        <div id="galeria" class="tab-content">
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Galeria de Imagens</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="img/navios_tempestade.jpg" alt="Navios em Tempestade">
+                            <div class="gallery-overlay">
+                                <h4>Navios em Tempestade</h4>
+                                <p>Representação artística dos perigos enfrentados pelos navegadores durante as Grandes Navegações.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/mapa_antigo.jpg" alt="Mapa Antigo">
+                            <div class="gallery-overlay">
+                                <h4>Mapa Antigo</h4>
+                                <p>Mapa histórico mostrando as rotas marítimas e os territórios descobertos durante a expansão.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/mapa_vintage.jpg" alt="Mapa Vintage">
+                            <div class="gallery-overlay">
+                                <h4>Cartografia Histórica</h4>
+                                <p>Exemplo da evolução da cartografia durante o período das Grandes Navegações.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/mapa_rotas1.jpg" alt="Rotas Marítimas">
+                            <div class="gallery-overlay">
+                                <h4>Rotas Marítimas</h4>
+                                <p>Mapa detalhado das principais rotas utilizadas pelos navegadores europeus.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/mapa_rotas2.jpg" alt="Oceanos Navegados">
+                            <div class="gallery-overlay">
+                                <h4>Oceanos Navegados</h4>
+                                <p>Visualização dos oceanos Atlântico e Índico, principais cenários da expansão marítima.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/mapa_rotas3.jpg" alt="Expedições Históricas">
+                            <div class="gallery-overlay">
+                                <h4>Expedições Históricas</h4>
+                                <p>Mapa mostrando as diferentes expedições e seus percursos pelos oceanos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba Quiz -->
+        <div id="quiz" class="tab-content">
+            <section class="section alt-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Quiz da Expansão Marítima</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="quiz-container">
+                        <div id="quiz-content">
+                            <div class="quiz-question" id="question"></div>
+                            <div class="quiz-options" id="options"></div>
+                            <div class="quiz-result" id="result"></div>
+                            <button class="control-button" id="next-question" style="display: none;">Próxima Pergunta</button>
+                        </div>
+                        <div class="quiz-score" id="quiz-score" style="display: none;">
+                            <h3>Resultado Final</h3>
+                            <p id="final-score"></p>
+                            <button class="control-button" id="restart-quiz">Reiniciar Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé histórico -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Créditos</h3>
+                    <p>Projeto desenvolvido para fins educacionais</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Fontes</h3>
+                    <ul>
+                        <li><a href="#">Toda Matéria</a></li>
+                        <li><a href="#">Mundo Educação</a></li>
+                        <li><a href="#">Brasil Escola</a></li>
+                        <li><a href="#">Politize!</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Tecnologias</h3>
+                    <p>HTML5, CSS3, JavaScript, Flask</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Expansão Marítima. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+   <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+
+  // Toggle ao clicar no botão
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.toggle('open');
+  });
+
+  // Fechar ao clicar fora do menu
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !toggleBtn.contains(e.target)) {
+      nav.classList.remove('open');
+    }
+  });
+
+  // Fechar ao clicar em qualquer link
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+    });
+  });
+</script>
+
+
+</body>
+</html>
